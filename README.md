@@ -1,6 +1,6 @@
 # Responsive Portfolio Webpage
 
-I created this repository using HTML and CSS 
+I created this repository using HTML & CSS 
 (as part of my first freeCodeCamp Certification)
 
 ## Mockup on Desktop
