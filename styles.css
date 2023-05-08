@@ -1,106 +1,156 @@
-body {
-    color: #387a96;
-    background-color: #ebf5fc;
-    margin: 50px;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma;
-    min-width: 620 px;
-}
-
-.container {
-    width: 100%;
-    min-height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
-    overflow: hidden;
-    
-}
-
-#top-menu {
-    width: 100%;
-    display: flex;
-    align-items: stretch;
-    z-index: 3;
-    top: 0;
-    position: fixed;
-    margin-bottom: 5px;
-    background-color: #0096FF;
-    
-}
-
-.logo {  
-    z-index: 3;
-    top: 0;
-    left: 110px;
-    position: fixed;
-    background-color: #0096FF;
-}
 
 #navbar {
-    flex: 1;
-    text-align: justify;
-    z-index: 3;
     top: 0;
-    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #E5D1FA;
     width: 100%;
-    background-color: #0096FF;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 30px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ebf5fc;
-    font-size: 16px;
-}
-
-#projects {
+    height: 45px;
+    position: fixed;
     display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+    justify-content: space-evenly;
+    justify-items: right;
+    margin: 0;
+    padding: 0;
+    
+}
 
-  .project-tile {
-    width: 80%;
-    height: 1000 px;
-    padding: 3px;
-    border-radius: 15px;
-  }
+#navbar a {
+    text-decoration: none;
+    color: #ECF2FF;
+    font-style: italic;
+    font-weight: 600;
+    padding: 10px;
+}
 
-  h1, h2, p {
+
+body {
+    background-color: #ECF2FF;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav > ul > li {
+    list-style: none;
+}
+
+#welcome-section {
+    margin-top: 60px;
+}
+
+
+h1, h2 {
+    color: #E5D1FA;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+    font-weight: 900;
+}
 
-  #coding-life {
+p {
+    color: #5206a4;
+    text-align: justify;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+a:hover, #navbar a:hover {
+    color: #FFF4D2;
+    background-color: #E3DFFD;
+}
+
+/* Flexbox settings for the screenshots of my projects */
+
+* {
+    box-sizing: border-box;
+}
+
+.project-tile {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: groove #c08ff4 12px;
+    padding: 15px;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* End of Flexbox settings for the screenshots of my projects */
+
+
+footer p {
+    color: #c08ff4;
+    text-decoration: underline double #FFF4D2;
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+#intro-image {
     display: block;
-    width: 70%;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 220px;
+    border-radius: 45px 25px 75px;
+}
 
-  p {
-    font-size: 19px;
-  }
+#github-button {
+    display: inline;
+    width: 70px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  #profile-link a {
-    color: #82b8cf;
-  }
+#linkedin-button {
+    display: inline;
+    width: 60px;
+    height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding-left: 10px;
+}
 
-  #profile-link a:hover {
-    color: #387a96;
-  }
-  
-  @media (max-width: 1270px) {
-    #project-tile {
-        width: 50px;
+#email-icon {
+    display: inline;
+    width: 60px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#social-media-paragraph {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#telephone-icon {
+    display: inline;
+    width: 45px;
+    height: 62px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* media query */
+
+@media (687px <= width <= 1400px) {
+    #navbar a {
+      width: 50%;
     }
   }
